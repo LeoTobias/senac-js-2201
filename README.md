@@ -1,9 +1,6 @@
 # senac-js-2201
 
-Scripts para Web 2022 - 01
+Uma apresentação da aula e do semestre, e uma introdução dos comandos git
 
-### vamos nos divertir muito, com JavaScript ###
 
-Foco !!!
-
-### Hoje dia 16/02/2022 estou fazendo um push para verificar se o git instalado no computador da sala d159 colabora.
+### Testando o git instalado na máquina da sala d159.
