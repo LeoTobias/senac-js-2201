@@ -48,6 +48,7 @@ itensArray.forEach(function(li, indice){
 
 // OU even para par
 
+/* 
 let itensImpares = document.querySelectorAll('li:nth-child(odd)');
 
 let itens = document.getElementsByTagName('li');
@@ -60,4 +61,21 @@ mudaCor.forEach(function(item){
 
 });
 
+FINAL DA AULA DO DIA 16/03/22 
 
+*/
+
+
+// const ITENS = document.querySelector('div.card-action');
+
+// console.log(ITENS.lastElementChild);
+
+// ITENS.children[1].firstChild.textContent = 'Focar nos estudos e academia';
+
+// ITENS.children[1].firstChild.data = 'Focar nos estudos e academia';
+
+// ITENS.children[1].firstChild.nodeValue = 'Focar nos estudos e academia';
+
+// ITENS.children[0].children[1].textContent = 'Novas Tarefas para você inserir';
+
+// ITENS.lastElementChild.textContent = 'APAGAR TUDO';
