@@ -31,7 +31,7 @@ function calculaIMC(evento){
 
     let resultado = document.querySelector("#resultado");
     let p = document.createElement('p');
-    p.className = 'resultado';
+    
     p.textContent = "Seu IMC é: "+imc+" kg/m² e seu status é: "+traducao;
 
     resultado.appendChild(p);
