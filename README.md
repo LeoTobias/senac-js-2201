@@ -1,3 +1,3 @@
 # senac-js-2201
 
-Projeto Calculadora de IMC apenas com JavaScript
+Desenvolva um programa que preveja a idade do usuário pelo nome consumindo a API https://agify.io/
