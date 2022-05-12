@@ -50,35 +50,39 @@ function pegaTarefa(){
 function adicionaTarefa(e){
 
     e.preventDefault();
-    if(CAMPO_TAREFA.value === ''){ // Verifica se o campo está vazio.
+    try{
+        if(CAMPO_TAREFA.value === ''){ // Verifica se o campo está vazio.
         
-        alert('Insira uma tarefa!');
-
-    }else {
-
-        // Cria os novos elementos
-        const LI = document.createElement('li');
-        LI. className = 'collection-item';
-        LI.appendChild(document.createTextNode(CAMPO_TAREFA.value));
-
-        const A = document.createElement('a');
-        A.className = 'apaga-tarefa secondary-content';
-
-        const I = document.createElement('i');
-        I.className = 'fa fa-remove';
-        
-        A.appendChild(I);
-        LI.appendChild(A);
-
-        //FIM cria os novos elementos
-
-        LISTA.appendChild(LI); // Adiciona à lista de tarefas;
-
-        gravaTarefaNoLocalStorage(CAMPO_TAREFA);
-        
-        CAMPO_TAREFA.value = '';
+            alert('Insira uma tarefa!');
+    
+        }else {
+    
+            // Cria os novos elementos
+            const LI = document.createElement('li');
+            LI. className = 'collection-item';
+            LI.appendChild(document.createTextNode(CAMPO_TAREFA.value));
+    
+            const A = document.createElement('a');
+            A.className = 'apaga-tarefa secondary-content';
+    
+            const I = document.createElement('i');
+            I.className = 'fa fa-remove';
+            
+            A.appendChild(I);
+            LI.appendChild(A);
+    
+            //FIM cria os novos elementos
+    
+            LISTA.appendChild(LI); // Adiciona à lista de tarefas;
+    
+            gravaTarefaNoLocalStorage(CAMPO_TAREFA);
+            
+            CAMPO_TAREFA.value = '';
+        }
+    }catch(e){
+        alert('Erro ao criar elemento: ' + e.message);
     }
-
+    
 }
 
 function gravaTarefaNoLocalStorage(tarefa){

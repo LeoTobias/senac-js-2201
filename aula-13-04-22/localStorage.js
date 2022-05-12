@@ -47,12 +47,17 @@ document.querySelector('input.btn').addEventListener('click', add);
 function add(e){
 
     e.preventDefault();
-        
-    const valorUsuario = document.querySelector('#task').value;
+    try{
+        const valorUsuario = document.querySelector('#task').value;
     
-    document.querySelector('#task').value = '';
+        document.querySelector('#task').value = '';
+    
+        sessionStorage.setItem('tarefa', valorUsuario);
 
-    sessionStorage.setItem('tarefa', valorUsuario);
+    }catch(e){
+        alert('Falha ao pegar o valor do usuário: ' + e.message);
+    }
+
 }
 
 const TRF = sessionStorage.getItem('tarefa');
